@@ -31,7 +31,7 @@ The main files and directories in this project are:
 
 To preview or work with this project:
 
-1. Clone the repository: `git clone https://github.com/your-username/ecommerce-website.git`
+1. Clone the repository: `git clone https://github.com/areta1921/shoppingSba`
 2. Open `index.html` in a web browser to view the website.
 3. Use a code editor like Visual Studio Code to explore and modify the code.
 
