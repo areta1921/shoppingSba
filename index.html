@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <title>Ecommerce Website</title>
+  </head>
+  <body>
+    <header>
+      <div class="nav container">
+        <a href="#" class="logo" style="color: blue;">Ecommerce</a>
+        <nav class="navbar navbar-hidden">
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="../pages/login.html">Login</a></li>
+            <li><a href="./pages/validation.html">validation</a></li>
+            <li><a href="../pages/register.html">Register</a></li>
+          </ul>
+        </nav>
+        <!-- Cart Icon -->
+        <i class="bx bx-shopping-bag" id="cart-icon"></i>
+        <!-- Cart -->
+        <div class="cart">
+          <h2 class="cart-title">Your Cart</h2>
+          <div class="cart-content">
+            <div class="cart-box">
+              <img src="img/product2.jpg" alt="" class="cart-img" />
+              <div class="detail-box">
+                <div class="cart-product-title">Earbuds</div>
+                <div class="cart-price">$25</div>
+                <input type="number" value="1" class="cart-quantity" />
+              </div>
+              <!-- Remove from Cart -->
+              <i class="bx bxs-trash-alt cart-remove"></i>
+            </div>
+          </div>
+          <!-- Total -->
+
+          <div class="total">
+            <div class="total-title">Total</div>
+            <div class="total-price">$0</div>
+          </div>
+          <button type="button" class="btn-buy">Buy Now</button>
+          <i class="bx bx-x" id="close-cart"></i>
+        </div>
+      </div>
+    </header>
+
+    <!-- Shop -->
+    <section class="shop container">
+      <h2 class="section-title">Shop Products</h2>
+
+      <div class="shop-content">
+        <div class="product-box">
+          <img src="img/product1.jpg" class="product-img" alt="" />
+          <h2 class="product-title">AEROREADY SHIRT</h2>
+          <span class="price">$25</span>
+          <i class="bx bx-shopping-bag add-cart"></i>
+        </div>
+        <div class="product-box">
+          <img src="img/product2.jpg" class="product-img" alt="" />
+          <h2 class="product-title">WIRLESS EARPUD</h2>
+          <span class="price">$105</span>
+          <i class="bx bx-shopping-bag add-cart"></i>
+        </div>
+        <div class="product-box">
+          <img src="img/product3.jpg" class="product-img" alt="" />
+          <h2 class="product-title">HOODED PARKA</h2>
+          <span class="price">$245</span>
+          <i class="bx bx-shopping-bag add-cart"></i>
+        </div>
+        <div class="product-box">
+          <img src="img/product4.jpg" class="product-img" alt="" />
+          <h2 class="product-title">METAL BOTTLE</h2>
+          <span class="price">$45</span>
+          <i class="bx bx-shopping-bag add-cart"></i>
+        </div>
+        <div class="product-box">
+          <img src="img/product5.jpg" class="product-img" alt="" />
+          <h2 class="product-title">SLIVER METAL SUNGLASS</h2>
+          <span class="price">$24</span>
+          <i class="bx bx-shopping-bag add-cart"></i>
+        </div>
+        <div class="product-box">
+          <img src="img/product6.jpg" class="product-img" alt="" />
+          <h2 class="product-title">BACK HAT</h2>
+          <span class="price">$24</span>
+          <i class="bx bx-shopping-bag add-cart"></i>
+        </div>
+        <div class="product-box">
+          <img src="img/product7.jpg" class="product-img" alt="" />
+          <h2 class="product-title">BACKPACK</h2>
+          <span class="price">$84</span>
+          <i class="bx bx-shopping-bag add-cart"></i>
+        </div>
+        <div class="product-box">
+          <img src="img/product8.jpg" class="product-img" alt="" />
+          <h2 class="product-title">ULTRABOOST 22</h2>
+          <span class="price">$234</span>
+          <i class="bx bx-shopping-bag add-cart"></i>
+        </div>
+      </div>
+    </section>
+    <script src="js/main.js"></script>
+  </body>
+</html>

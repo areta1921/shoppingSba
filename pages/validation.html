@@ -1,0 +1,88 @@
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="../css/style.css">
+  <title>Form Validation</title>
+  <style>
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      height: 300px;
+      margin-top: 5%;
+    }
+    input,
+    select {
+      width: 200px;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-hidden">
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="../pages/login.html">Login</a></li>
+      <li><a href="../pages/register.html">Register</a></li>
+    </ul>
+  </nav>
+
+  <form action="" name="myForm" method="POST">
+    <input
+      type="text"
+      name="Name"
+      placeholder="Enter a username"
+      pattern="^[a-zA-Z]+"
+      title="Please start username with a letter from a-z "
+      required
+    />
+    <input
+      type="text"
+      name="Email"
+      placeholder="Email with regEx"
+      title="please start with letter and follow name@mail.com"
+      pattern="^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$"
+      required
+    />
+    <input
+      type="email"
+      name="EmailTwo"
+      placeholder="Email with type email"
+      required
+    />
+    <input
+      type="tel"
+      name="Zip"
+      min="5"
+      maxlength="5"
+      id="ZipID"
+      placeholder="Enter
+   Zip Code"
+      pattern="\d{5}"
+      title="Five digits only"
+      required
+    />
+    <input
+      type="date"
+      id="date"
+      value="2024-12-31"
+      min="1910-01-01"
+      max="2024-12-31"
+      placeholder="Date of Birth"
+      required
+    />
+    <select name="Country" id="CountryId" required>
+      <option value="">[choose yours] | Select Country</option>
+      <option value="USA">USA</option>
+      <option value="UK">UK</option>
+      <option value="UAE">UAE</option>
+    </select>
+    <input
+      type="password"
+      name="password"
+      id="password"
+      placeholder="Password"
+      required
+    />
+    <input type="submit" value="Submit" />
+  </form>
+</body>
